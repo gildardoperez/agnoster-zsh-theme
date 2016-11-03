@@ -1,4 +1,4 @@
-# agnoster.zsh-theme
+# agnoster.zsh-theme SUPER light gray
 
 A ZSH theme optimized for people who use:
 
