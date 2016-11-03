@@ -26,7 +26,7 @@
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
 CURRENT_BG='NONE'
-PRIMARY_FG=black
+PRIMARY_FG=232
 
 # Characters
 SEGMENT_SEPARATOR="\ue0b0"
@@ -68,13 +68,13 @@ prompt_end() {
 # Each component will draw itself, and hide itself if no information needs to be shown
 
 # Context: user@hostname (who am I and where am I)
-prompt_context() {
-  local user=`whoami`
-
-  if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user@%m "
-  fi
-}
+# prompt_context() {
+#   local user=`whoami`
+#
+#   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
+#     prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user@%m "
+#   fi
+# }
 
 # Git: branch/detached head, dirty status
 prompt_git() {
@@ -85,10 +85,10 @@ prompt_git() {
   ref="$vcs_info_msg_0_"
   if [[ -n "$ref" ]]; then
     if is_dirty; then
-      color=yellow
+      color=red
       ref="${ref} $PLUSMINUS"
     else
-      color=green
+      color=252
       ref="${ref} "
     fi
     if [[ "${ref/.../}" == "$ref" ]]; then
@@ -103,7 +103,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $PRIMARY_FG ' %~ '
+  prompt_segment 254 $PRIMARY_FG ' %~ '
 }
 
 # Status:
@@ -123,7 +123,7 @@ prompt_status() {
 # Display current virtual environment
 prompt_virtualenv() {
   if [[ -n $VIRTUAL_ENV ]]; then
-    color=cyan
+    color=252
     prompt_segment $color $PRIMARY_FG
     print -Pn " $(basename $VIRTUAL_ENV) "
   fi
@@ -134,7 +134,7 @@ prompt_agnoster_main() {
   RETVAL=$?
   CURRENT_BG='NONE'
   prompt_status
-  prompt_context
+# prompt_context
   prompt_virtualenv
   prompt_dir
   prompt_git
