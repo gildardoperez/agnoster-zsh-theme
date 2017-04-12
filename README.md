@@ -1,4 +1,4 @@
-# agnoster.zsh-theme SUPER FANCY light gray
+# 🌫 Marble🌫  💎💎💎 SUPER FANCY 💎💎💎 Terminal .zsh-theme
 
 A ZSH theme optimized for people who use:
 
