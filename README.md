@@ -1,7 +1,8 @@
-# 🌫 Marble🌫  💎💎💎 SUPER FANCY 💎💎💎 Terminal .zsh-theme
+# 💎💎💎 SUPER FANCY 💎💎💎 Agnoster theme .zsh-theme
 
-A ZSH theme optimized for people who use:
+A fork of Agnoster theme and made it SUPER FANCY for people who use:
 
+– Fancy terminals
 - Solarized
 - Git
 - Unicode-compatible fonts and terminals (I use iTerm2 + Menlo)
