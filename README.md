@@ -7,7 +7,7 @@ A fork of Agnoster theme and made it SUPER FANCY for people who use:
 - Git
 - Unicode-compatible fonts and terminals (I use iTerm2 + Menlo)
 
-For Mac users, I highly recommend iTerm 2 + Solarized Dark
+For Mac users, I highly recommend iTerm 2 + import the (fancy-light.itermcolors) under colors
 
 # Compatibility
 
