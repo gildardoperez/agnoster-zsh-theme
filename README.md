@@ -1,4 +1,4 @@
-# 💎💎💎 SUPER FANCY 💎💎💎 Agnoster theme .zsh-theme
+# SUPER FANCY 💎💎💎 Agnoster theme .zsh-theme
 
 A fork of Agnoster theme and made it SUPER FANCY for people who use:
 
